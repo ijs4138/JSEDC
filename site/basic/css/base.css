@@ -1,0 +1,123 @@
+
+/* reset */
+* {margin: 0; padding: 0; box-sizing: border-box;}
+html,body {font-family: 'Pretendard'; color: #1a1a1a; width: 100%; height: 100%;  font-size: 16px;}
+body{font-size: 1rem; letter-spacing: -0.03em; overflow-x: hidden;}
+ul,ol,li {list-style: none}
+a {text-decoration: none; color: #1a1a1a;}
+body::-webkit-scrollbar {width: 0px; /* 스크롤바의 너비 */}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+
+/* 루트 */
+:root {
+  --header_high: 100px;
+  --input_high: 60px;
+
+  /* Line Height */
+  --line_high120: 120%; /* basic */
+  --line_high140: 140%; /* 2줄 이하 */
+  --line_high160: 160%; /* 3줄 이상 */
+
+  /* Color */
+  --primary-color: var(--green-400); /* 주 색상 */
+  --secondary-color: var(--yellow-600); /* 서브 색상 */
+
+  /* Green */
+  --green-1000: #05230A;
+  --green-900: #006101;
+  --green-800: #008117;
+  --green-700: #009224;
+  --green-600: #00A430;
+  --green-500: #00B339;
+  --green-400: #3DBF5A;
+  --green-300: #67CB77;
+  --green-200: #96D99F;
+  --green-100: #C0E8C5;
+  --green-50: #E5F6E7;
+
+  /* Yellow */
+  --yellow-1000: #241508;
+  --yellow-900: #FF7300;
+  --yellow-800: #FF9300;
+  --yellow-700: #FFA400;
+  --yellow-600: #FFB800;
+  --yellow-500: #FFC509;
+  --yellow-400: #FFCD29;
+  --yellow-300: #FED850;
+  --yellow-200: #FEE283;
+  --yellow-100: #FEEDB4;
+  --yellow-50: #FFF9E1;
+
+  /* Neutral */
+  --black: #000000;
+  --white: #FFFFFF;
+  --olive-green: #9D9E78;
+  --olive-dark-green: #797A49;
+  --bg-dark-green: #1CD846;
+
+  /* Grayscale */
+  --gray-900: #1B1D1F;
+  --gray-800: #26282B;
+  --gray-600: #454C53;
+  --gray-500: #72787F;
+  --gray-400: #9EA4AA;
+  --gray-200: #C9CDD2;
+  --gray-100: #E8EBED;
+  --gray-50: #F7F8F9;
+
+  /* Semantic */
+  --success: #3E7BFD;
+  --warning: #FF8539;
+  --error: #F6503B;
+
+  /* sns */
+  --naver_color: #00C300;
+  --youtube_color: #ED2123;
+  --instargram_color: #5B43E1;
+  --kakao_color: #FAE100;
+
+  /* Text size (16px 기준) */
+  --H1: 6rem; /* 96px */
+  --H2: 4rem; /* 64px */
+  --H3: 3rem; /* 48px */
+  --H4: 2.25rem; /* 36px */
+  --H5: 1.5rem; /* 24px */
+  --H6: 1.25rem; /* 20px */
+  --Subtitle-1: 1.125rem; /* 18px */
+  --Subtitle-2: 1rem; /* 16px */
+  --body-1: 1rem; /* 16px */
+  --body-2: 0.875rem; /* 14px */
+  --Caption: 0.75rem; /* 12px */
+  --Button: 1rem; /* 16px */
+
+  --font-size-xxxl: 1.5rem; /* 24px */
+  --font-size-xxl: 1.375rem; /* 22px */
+  --font-size-xl: 1.25rem; /* 20px */
+  --font-size-l: 1.125rem; /* 18px */
+  --font-size-m: 1rem; /* 16px */
+  --font-size-s: 0.875rem; /* 14px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-xxs: 0.6875rem; /* 11px */
+  --font-size-xxxs: 0.625rem; /* 10px */
+
+  /* Text weight */
+  --T-black: 900;
+  --bold: 700;
+  --medium: 500;
+  --regular: 400;
+  --light: 300;
+
+  /* font-family */
+  --Gmarket: 'GmarketSans';
+  --Aggro: 'SBAggro';
+  --Pretendard: 'Pretendard';
+
+  --basic-transition: 0.2s ease;
+  --slow-transition: 0.4s ease;
+  --point-transition: 0.6s cubic-bezier(0, 0.88, 0.45, 0.99);
+}
+
+

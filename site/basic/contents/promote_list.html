@@ -1,0 +1,1474 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <link rel="stylesheet" href="/site/basic/css/font.css">
+  <link rel="stylesheet" href="/site/basic/css/base.css">
+  <link rel="stylesheet" href="/site/basic/css/common.css">
+  <link rel="stylesheet" href="/site/basic/css/style.css">
+  <link rel="stylesheet" href="/site/basic/css/board.css">
+  <link rel="stylesheet" href="/site/basic/css/header.css">
+  <link rel="stylesheet" href="/site/basic/css/footer.css">
+  <!-- 스크립트 최신ver URL 사용 -->
+  <script src="/site/basic/js/jquery-latest.min.js"></script>
+  <script type="text/javascript" src="/site/basic/js/script.js"></script>
+  <!-- 게시판 js -->
+  <script type="text/javascript" src="/site/basic/js/board.js"></script>
+  <!-- swiper js -->
+  <link rel="stylesheet" href="/site/basic/css/swiper-bundle.min.css" />
+  <script src="/site/basic/js/swiper-bundle.min.js"></script>
+  <!-- 스크롤 트리거 js -->
+  <script src="/site/basic/js/gsap.min.js"></script>
+  <script src="/site/basic/js/ScrollTrigger.min.js"></script>
+  <!-- AOS 라이브러리 불러오기-->
+  <link rel="stylesheet" href="/site/basic/css/aos.css">
+  <script src="/site/basic/js/aos.js"></script>
+
+</head>
+
+<body>
+  <div id="wrap">
+    <!-- S header -->
+    <header id="header">
+      <div class="black_dim"></div>
+      <div class="dynamic_black_dim"></div>
+      <div class="header_wrap">
+        <!-- logo -->
+        <div class="header_logo_box">
+          <a href="#">
+            <img src="/site/basic/img/header_logo.svg" alt="재단법인 춘천지역먹거리통합지원센터 헤더 로고 이미지" class="header_logo_img">
+          </a>
+        </div>
+        <!-- pc nav -->
+        <nav class="pc_nav">
+          <ul class="gnb">
+            <li class="dep_1">
+              <a href="#" class="dep_1_text">재단소개</a>
+              <!-- dep_2 wrap -->
+              <div class="dep_2_wrap">
+                <!-- dep_2 visual_title -->
+                <div class="dep_2_visual_title_wrap">
+                  <div class="dep_2_visual_title_box">
+                    <div class="white_title4">재단소개</div>
+                    <p class="white_basic_text mar_t20">우리 재단의 설립 목적과 비전을 소개합니다.</p>
+                  </div>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">인사말</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">CI</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">재단연혁</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">재단비전</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">조직구성도</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">오시는 길</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dep_1">
+              <a href="#" class="dep_1_text">주요사업</a>
+              <!-- dep_2 wrap -->
+              <div class="dep_2_wrap">
+                <!-- dep_2 visual_title -->
+                <div class="dep_2_visual_title_wrap">
+                  <div class="dep_2_visual_title_box">
+                    <div class="white_title4">주요사업</div>
+                    <p class="white_basic_text mar_t20">재단의 주요 사업과 활동을 확인하세요.</p>
+                  </div>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">먹거리 거버넌스</a></li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">학교 급식사업</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">주요사업현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">공지사항</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">춘천관내 학교현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">업체 계약</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">공공 급식사업</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">직매장 사업</a></li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">생산관리</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">주요사업현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">공지사항</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">춘천관내 학교현황</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="dep_1">
+              <a href="#" class="dep_1_text">농가교육</a>
+              <!-- dep_2 wrap -->
+              <div class="dep_2_wrap">
+                <!-- dep_2 visual_title -->
+                <div class="dep_2_visual_title_wrap">
+                  <div class="dep_2_visual_title_box">
+                    <div class="white_title4">농가교육</div>
+                    <p class="white_basic_text mar_t20">농업인을 위한 전문 교육과 지원 프로그램을 제공합니다.</p>
+                  </div>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">교육안내</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">교육신청</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">교육자료</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">식생활 교육 시민강좌</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dep_1">
+              <a href="#" class="dep_1_text">정보공개</a>
+              <!-- dep_2 wrap -->
+              <div class="dep_2_wrap">
+                <!-- dep_2 visual_title -->
+                <div class="dep_2_visual_title_wrap">
+                  <div class="dep_2_visual_title_box">
+                    <div class="white_title4">정보공개</div>
+                    <p class="white_basic_text mar_t20">재단의 투명한 운영을 위한 정보를 공개합니다.</p>
+                  </div>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">경영공시</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">경영목표 및 운영계획</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">재무현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">임원 및 운영인력 현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">임직원 친인척 현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">인건비 예산 및 집행현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">기관장 성과계약 달성정도</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">경영평가 결과</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">감시결과 조치요구사항</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">정보공개</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">행정정보공개</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">계약현황 및 대가지급</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">업무추진비 및 기타</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">내부규정</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">정보목록</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">자료실</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">비공개 목록</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">관련법령 및 규정</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">윤리경영</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">인권경영</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dep_1">
+              <a href="#" class="dep_1_text">홍보마당</a>
+              <!-- dep_2 wrap -->
+              <div class="dep_2_wrap">
+                <!-- dep_2 visual_title -->
+                <div class="dep_2_visual_title_wrap">
+                  <div class="dep_2_visual_title_box">
+                    <div class="white_title4">홍보마당</div>
+                    <p class="white_basic_text mar_t20">재단의 소식과 다양한 이야기를 전해드립니다.</p>
+                  </div>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">보도자료</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">먹거리동향</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">홍보게시판</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dep_1">
+              <a href="#" class="dep_1_text">알림마당</a>
+              <!-- dep_2 wrap -->
+              <div class="dep_2_wrap">
+                <!-- dep_2 visual_title -->
+                <div class="dep_2_visual_title_wrap">
+                  <div class="dep_2_visual_title_box">
+                    <div class="white_title4">알림마당</div>
+                    <p class="white_basic_text mar_t20">재단의 공지사항과 주요 정보를 빠르게 확인하세요.</p>
+                  </div>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">공지사항</a></li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">채용공고</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">채용목록</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">신청접수</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">신청조회</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">재단 갤러리</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">자료실</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">타기관 고시공고</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="dep_1">
+              <a href="#" class="dep_1_text">참여마당</a>
+              <!-- dep_2 wrap -->
+              <div class="dep_2_wrap">
+                <!-- dep_2 visual_title -->
+                <div class="dep_2_visual_title_wrap">
+                  <div class="dep_2_visual_title_box">
+                    <div class="white_title4">참여마당</div>
+                    <p class="white_basic_text mar_t20">여러분의 참여로 함께 만들어가는 소통의 공간입니다.</p>
+                  </div>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">학교급식 FAQ</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">학교급식 Q&A</a></li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">클린신고센터</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">부정 · 부패신고</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">갑질피해 신고</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">성희롱 · 성폭행 신고센터</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- mo nav -->
+        <nav class="mo_nav">
+          <div class="mo_top_box">
+            <!-- 모바일 춘천 지역먹거리 직매장 바로가기 -->
+            <div class="mo_market_link_box">
+              <a href="http://cclf.co.kr/localfood/main.do" target="_blank">
+                <img src="/site/basic/img/single_logo.svg" alt="춘천지역먹거리 직매장 로고 이미지" class="mo_single_logo_img mar_r5">
+                <p class="market_link_text">춘천 지역먹거리 직매장</p>
+                <div class="more_btn_s mar_l10">
+                  <div class="circle_arrow"></div>
+                </div>
+              </a>
+            </div>
+            <!-- 로그인/로그아웃 버튼 -->
+            <div class="btn_box">
+              <ul class="btn_ul">
+                <!-- disables시 버튼 숨겨짐 -->
+                <li class="btn_list disables">
+                  <a href="#">
+                    <p class="btn_text">로그인</p>
+                  </a>
+                </li>
+                <li class="btn_list">
+                  <a href="#">
+                    <p class="btn_text">로그아웃</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mo_gnb_box">
+            <ul class="mo_dep1_ul">
+              <li class="mo_dep1_list on"><a href="#" class="mo_dep_1_text">재단소개</a></li>
+              <li class="mo_dep1_list"><a href="#" class="mo_dep_1_text">주요사업</a></li>
+              <li class="mo_dep1_list"><a href="#" class="mo_dep_1_text">농가교육</a></li>
+              <li class="mo_dep1_list"><a href="#" class="mo_dep_1_text">정보공개</a></li>
+              <li class="mo_dep1_list"><a href="#" class="mo_dep_1_text">홍보마당</a></li>
+              <li class="mo_dep1_list"><a href="#" class="mo_dep_1_text">알림마당</a></li>
+              <li class="mo_dep1_list"><a href="#" class="mo_dep_1_text">참여마당</a></li>
+            </ul>
+
+            <ul class="mo_dep2_ul">
+              <li class="mo_dep2_list on">
+                <ul class="mo_dep2_menu_ul">
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">인사말</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">CI</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">재단연혁</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">재단비전</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">조직구성도</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">오시는 길</a></li>
+                </ul>
+              </li>
+
+              <li class="mo_dep2_list">
+                <ul class="mo_dep2_menu_ul">
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">먹거리 거버넌스</a></li>
+                  <li class="mo_dep2_menu_list">
+                    <a href="#" class="mo_dep_2_text mo_nav_arrow">학교 급식사업</a>
+                    <ul class="mo_dep3_ul">
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">주요사업현황</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">공지사항</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">춘천관내 학교현황</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">업체 계약</a></li>
+                    </ul>
+                  </li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">공공 급식사업</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">직매장 사업</a></li>
+                  <li class="mo_dep2_menu_list">
+                    <a href="#" class="mo_dep_2_text mo_nav_arrow">생산관리</a>
+                    <ul class="mo_dep3_ul">
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">주요사업현황</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">공지사항</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">춘천관내 학교현황</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              
+              <li class="mo_dep2_list">
+                <ul class="mo_dep2_menu_ul">
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">교육안내</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">교육신청</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">교육자료</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">식생활 교육 시민강좌</a></li>
+                </ul>
+              </li>
+              
+              <li class="mo_dep2_list">
+                <ul class="mo_dep2_menu_ul">
+                  <li class="mo_dep2_menu_list">
+                    <a href="#" class="mo_dep_2_text mo_nav_arrow">경영공시</a>
+                    <ul class="mo_dep3_ul">
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">경영목표 및 운영계획</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">재무현황</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">임원 및 운영인력 현황</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">임직원 친인척 현황</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">인건비 예산 및 집행현황</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">기관장 성과계약 달성정도</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">경영평가 결과</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">감시결과 조치요구사항</a></li>
+                    </ul>
+                  </li>
+                  <li class="mo_dep2_menu_list">
+                    <a href="#" class="mo_dep_2_text mo_nav_arrow">정보공개</a>
+                    <ul class="mo_dep3_ul">
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">행정정보공개</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">계약현황 및 대가지급</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">업무추진비 및 기타</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">내부규정</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">정보목록</a></li>
+                    </ul>
+                  </li>
+                  <li class="mo_dep2_menu_list">
+                    <a href="#" class="mo_dep_2_text mo_nav_arrow">자료실</a>
+                    <ul class="mo_dep3_ul">
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">비공개 목록</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">관련법령 및 규정</a></li>
+                    </ul>
+                  </li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">윤리경영</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">인권경영</a></li>
+                </ul>
+              </li>
+              
+              <li class="mo_dep2_list">
+                <ul class="mo_dep2_menu_ul">
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">보도자료</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">먹거리동향</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">홍보게시판</a></li>
+                </ul>
+              </li>
+              
+              <li class="mo_dep2_list">
+                <ul class="mo_dep2_menu_ul">
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">공지사항</a></li>
+                  <li class="mo_dep2_menu_list">
+                    <a href="#" class="mo_dep_2_text mo_nav_arrow">채용공고</a>
+                    <ul class="mo_dep3_ul">
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">채용목록</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">신청접수</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">신청조회</a></li>
+                    </ul>
+                  </li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">재단 갤러리</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">자료실</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">타기관 고시공고</a></li>
+                </ul>
+              </li>
+              
+              <li class="mo_dep2_list">
+                <ul class="mo_dep2_menu_ul">
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">학교급식 FAQ</a></li>
+                  <li class="mo_dep2_menu_list"><a href="#" class="mo_dep_2_text">학교급식 Q&A</a></li>
+                  <li class="mo_dep2_menu_list">
+                    <a href="#" class="mo_dep_2_text mo_nav_arrow">클린신고센터</a>
+                    <ul class="mo_dep3_ul">
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">부정 · 부패신고</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">갑질피해 신고</a></li>
+                      <li class="mo_dep3_list"><a href="#" class="mo_dep_3_text">성희롱 · 성폭행 신고센터</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- utils -->
+        <div class="header_utils">
+          <!-- 닉네임 -->
+          <p class="nick_name mar_r10"><span>춘천지역먹거리통합지원센터</span>님</p>
+          <!-- 로그인/로그아웃 버튼 -->
+          <div class="btn_box">
+            <ul class="btn_ul">
+              <!-- disables시 버튼 숨겨짐 -->
+              <li class="btn_list disables">
+                <a href="#">
+                  <p class="btn_text">로그인</p>
+                </a>
+              </li>
+              <li class="btn_list">
+                <a href="#">
+                  <p class="btn_text">로그아웃</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- 검색 버튼 -->
+          <div class="header_search_box">
+            <img src="/site/basic/img/search_icon.svg" alt="헤더 검색버튼 이미지" class="search_icon_img mar_l20">
+          </div>
+          <!-- 전체메뉴 햄버거 버튼 -->
+          <div class="hamburger_box">
+            <img src="/site/basic/img/hamburger_icon.svg" alt="춘천지역먹거리통합지원센터 전체메뉴 햄버거 버튼"
+              class="hamburger_icon_img pc_hambg mar_l10">
+              <img src="/site/basic/img/hamburger_icon.svg" alt="춘천지역먹거리통합지원센터 전체메뉴 햄버거 버튼"
+              class="hamburger_icon_img mo_hambg mar_l10">
+          </div>
+        </div>
+      </div>
+
+      <!-- 전체 메뉴 보기 -->
+      <div class="all_nav_box">
+        <!-- 닫기 버튼 -->
+        <div class="close_btn">
+          <div class="close_line1"></div>
+          <div class="close_line2"></div>
+        </div>
+
+        <div class="inner">
+          <ul class="all_nav_ul">
+            <li class="all_nav_list">
+              <div class="dep_2_wrap">
+                <!-- point 타이틀 -->
+                <div class="point_title_box">
+                  <h3 class="point_title point_title_bullet">재단소개</h3>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">인사말</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">CI</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">재단연혁</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">재단비전</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">조직구성도</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">오시는 길</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="all_nav_list">
+              <div class="dep_2_wrap">
+                <!-- point 타이틀 -->
+                <div class="point_title_box">
+                  <h3 class="point_title point_title_bullet">주요사업</h3>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">먹거리 거버넌스</a></li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">학교 급식사업</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">주요사업현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">공지사항</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">춘천관내 학교현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">업체 계약</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">공공 급식사업</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">직매장 사업</a></li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">생산관리</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">주요사업현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">공지사항</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">춘천관내 학교현황</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="all_nav_list">
+              <div class="dep_2_wrap">
+                <!-- point 타이틀 -->
+                <div class="point_title_box">
+                  <h3 class="point_title point_title_bullet">농가교육</h3>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">교육안내</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">교육신청</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">교육자료</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">식생활 교육 시민강좌</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="all_nav_list">
+              <div class="dep_2_wrap">
+                <!-- point 타이틀 -->
+                <div class="point_title_box">
+                  <h3 class="point_title point_title_bullet">정보공개</h3>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">경영공시</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">경영목표 및 운영계획</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">재무현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">임원 및 운영인력 현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">임직원 친인척 현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">인건비 예산 및 집행현황</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">기관장 성과계약 달성정도</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">경영평가 결과</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">감시결과 조치요구사항</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">정보공개</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">행정정보공개</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">계약현황 및 대가지급</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">업무추진비 및 기타</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">내부규정</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">정보목록</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">자료실</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">비공개 목록</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">관련법령 및 규정</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">윤리경영</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">인권경영</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="all_nav_list">
+              <div class="dep_2_wrap">
+                <!-- point 타이틀 -->
+                <div class="point_title_box">
+                  <h3 class="point_title point_title_bullet">홍보마당</h3>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">보도자료</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">먹거리동향</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">홍보게시판</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="all_nav_list">
+              <div class="dep_2_wrap">
+                <!-- point 타이틀 -->
+                <div class="point_title_box">
+                  <h3 class="point_title point_title_bullet">알림마당</h3>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">공지사항</a></li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">채용공고</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">채용목록</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">신청접수</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">신청조회</a></li>
+                    </ul>
+                  </li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">재단 갤러리</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">자료실</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">타기관 고시공고</a></li>
+                </ul>
+              </div>
+            </li>
+            <li class="all_nav_list">
+              <div class="dep_2_wrap">
+                <!-- point 타이틀 -->
+                <div class="point_title_box">
+                  <h3 class="point_title point_title_bullet">참여마당</h3>
+                </div>
+                <!-- dep_2 nav -->
+                <ul class="dep_2_ul">
+                  <li class="dep_2"><a href="#" class="dep_2_text">학교급식 FAQ</a></li>
+                  <li class="dep_2"><a href="#" class="dep_2_text">학교급식 Q&A</a></li>
+                  <li class="dep_2">
+                    <a href="#" class="dep_2_text">클린신고센터</a>
+                    <ul class="dep_3_ul">
+                      <li class="dep_3"><a href="#" class="dep_3_text">부정 · 부패신고</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">갑질피해 신고</a></li>
+                      <li class="dep_3"><a href="#" class="dep_3_text">성희롱 · 성폭행 신고센터</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 팝업 다시보기 버튼-->
+      <div class="popup_btn_box">
+        <a href="#!">
+          <img src="/site/basic/img/popup_icon.svg" alt="팝업 다시보기" class="popup_icon_img mar_r10">
+          <p class="popup_text">팝업 다시보기</p>
+        </a>
+      </div>
+
+      <!-- 팝업 다시보기 -->
+      <div class="popup_view_wrap">
+        <div class="inner">
+          <div class="popup_view_box">
+            <!-- 닫기 버튼 -->
+            <div class="close_btn">
+              <div class="close_line1"></div>
+              <div class="close_line2"></div>
+            </div>
+
+            <div class="popup_slider_box">
+              <div class="popup_slider_title_box">
+                <!-- 포인트 불렛 -->
+                 <div class="pst_pice">
+                  <ul class="point_bullet_ul mar_l5">
+                    <li class="point_bullet_list point_bullet_list_darkgreen"></li>
+                    <li class="point_bullet_list point_bullet_list_green"></li>
+                    <li class="point_bullet_list point_bullet_list_yellow"></li>
+                  </ul>
+                  <h5 class="aggro_title mar_t15">팝업존</h5>
+                  <p class="info_text mar_t5">핵심 소식과 이벤트를 한눈에 확인하세요!</p>
+                </div>
+                <div class="slider_control mar_t50">
+                  <div class="slider_fraction popup_slider_fraction mar_r30"></div>
+                  <div class="slider_nav">
+                    <button class="slider_prev popup_slider_prev">
+                      <div class="slider_prev_parrow"></div>
+                    </button>
+                    <button class="slider_next popup_slider_next">
+                      <div class="slider_prev_narrow"></div>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper popup_slider_swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#!" target="_blank">
+                      <img src="/site/basic/img/sns_con_bg02.png" alt="팝업 이미지" class="popup_img">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#!" target="_blank">
+                      <img src="/site/basic/img/farm_bg.png" alt="팝업 이미지" class="popup_img">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#!" target="_blank">
+                      <img src="/site/basic/img/sns_con_bg02.png" alt="팝업 이미지" class="popup_img">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#!" target="_blank">
+                      <img src="/site/basic/img/farm_bg.png" alt="팝업 이미지" class="popup_img">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- 춘천 지역먹거리 직매장 바로가기 버튼 -->
+      <div class="market_link_box">
+        <a href="http://cclf.co.kr/localfood/main.do" target="_blank">
+          <p class="market_link_text">춘천 지역먹거리 직매장</p>
+          <div class="more_btn_s mar_l10">
+            <div class="circle_arrow"></div>
+          </div>
+        </a>
+      </div>
+
+      <!-- 헤더 검색 클릭 박스 -->
+      <div class="header_search_click_box">
+        <!-- 닫기 버튼 -->
+        <div class="close_btn">
+          <div class="close_line1"></div>
+          <div class="close_line2"></div>
+        </div>
+
+        <div class="inner">
+          <div class="top_info_zone_box">
+            <div class="input_box">
+              <input type="text" class="" placeholder="찾으시는 정보가 있으시나요?">
+              <button class="search_btn" type="button">
+                <img src="/site/basic/img/search_icon.svg" alt="돋보기 아이콘" class="search_icon_img">
+              </button>
+            </div>
+          </div>
+
+          <ul class="farming_direct_ul">
+            <li class="farming_direct_list green_bg">
+              <a href="">
+                <p class="farming_title">농업에 관하여 <br>어려움이 있으신가요?</p>
+              </a>
+            </li>
+            <li class="farming_direct_list yellow_bg">
+              <a href="">
+                <p class="farming_title">우리안의 먹거리를 <br>직접 만나보세요!</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- E header -->
+
+    <!-- S sub -->
+     <main>
+      <section>
+        <div class="sub_content_wrap">
+          <!-- hero section -->
+          <div class="hero_wrap">
+            <div class="inner">
+              <!-- hero title 영역 -->
+              <div class="hero_title_box">
+                <p class="hero_sub_title">건강한 먹거리 농심 행복</p>
+                <h2 class="white_btitle mar_t10">홍보마당</h2>
+              </div>
+            </div>
+            <!-- hero nav 영역 -->
+            <div class="hero_nav_box">
+              <div class="inner">
+                <ul class="hero_nav_ul">
+                  <li class="hero_nav_list">
+                    <a href="">
+                      <p class="hero_nav_text">보도자료</p>
+                    </a>
+                  </li>
+                  <li class="hero_nav_list on">
+                    <a href="">
+                      <p class="hero_nav_text">먹거리동향</p>
+                    </a>
+                  </li>
+                  <li class="hero_nav_list">
+                    <a href="">
+                      <p class="hero_nav_text">홍보게시판</p>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div id="print">
+            <div class="inner">
+              <!-- breadcrumb_section  -->
+              <div class="breadcrumb_wrap">
+                <h4 class="title4">먹거리동향</h4>
+                <div class="breadcrumb_box">
+                  <ul class="breadcrumb_ul">
+                    <li class="breadcrumb_list">
+                      <p class="breadcrumb_text">홈</p>
+                    </li>
+                    <li class="breadcrumb_list">
+                      <p class="breadcrumb_text">-</p>
+                    </li>
+                    <li class="breadcrumb_list">
+                      <p class="breadcrumb_text">홍보마당</p>
+                    </li>
+                    <li class="breadcrumb_list">
+                      <p class="breadcrumb_text">-</p>
+                    </li>
+                    <li class="breadcrumb_list">
+                      <p class="breadcrumb_text">먹거리동향</p>
+                    </li>
+                  </ul>
+                  <ul class="breadcrumb_util_ul">
+                    <li class="breadcrumb_util_list" id="link_copy" onclick="clip(); return false;">
+                      <a href="#!">
+                        <img src="/site/basic/img/url_icon.svg" alt="url 주소 복사 아이콘 이미지" class="breadcrumb_util_img">
+                      </a>
+                    </li>
+                    <li class="breadcrumb_util_list" id="page_print" onclick="content_print();">
+                      <a href="#!">
+                        <img src="/site/basic/img/print_icon.svg" alt="프린터 아이콘 이미지" class="breadcrumb_util_img">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- 게시판 -->
+              <div class="sub_content_box">
+                <!-- 검색창 -->
+                <div class="search_wrap down_step">
+                  <div class="search_box">
+                    <select name="" id="" class="search_select">
+                      <option value="">전체</option>
+                      <option value="">제목</option>
+                      <option value="">작성자명</option>
+                      <option value="">본문</option>
+                    </select>
+                    <input type="text" id="" value="" name="" placeholder="검색어를 입력해주세요" class="search_input">
+                    <button type="submit" class="search_botton">
+                      <span class="search_icon">
+                        <img src="/site/basic/img/small_search_icon.svg" alt="돋보기 아이콘" class="sub_search_icon_img">
+                      </span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- 리포트 리스트 -->
+                <div class="report_list_wrap down_step">
+                  <div class="board_total_box">
+                    <p class="board_total_text">총 <span class="board_total_num">410</span>건의 게시글이 있습니다.</p>
+                  </div>
+                  <div class="report_list_box">
+                    <!-- 연도 선택 -->
+                    <div class="select_year_wrap">
+                      <div class="select_up_box year_box">
+                        <div class="select_up_btn year_btn">
+                          <p class="select_up_txt year_btn_txt">2024</p>
+                        </div>
+                        <div class="select_up_list_box year_list_box">
+                          <ul class="select_up_ul year_ul">
+                            <li class="select_up_list year_list">
+                              <a href="#!">
+                                <span>2023</span>
+                              </a>
+                            </li>
+                            <li class="select_up_list year_list">
+                              <a href="#!">
+                                <span>2022</span>
+                              </a>
+                            </li>
+                            <li class="select_up_list year_list">
+                              <a href="#!">
+                                <span>2021</span>
+                              </a>
+                            </li>
+                            <li class="select_up_list year_list">
+                              <a href="#!">
+                                <span>2020</span>
+                              </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="down_arrow_circle">
+                        <div class="arrow_down"></div>
+                      </div>
+                    </div>
+
+                    <!-- 월별 리스트 -->
+                    <ul class="report_ul">
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_12.png" alt="12월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">12</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 12 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_11.png" alt="11월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">11</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 11 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_10.png" alt="10월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">10</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 10 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_09.png" alt="9월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">09</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 09 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_08.png" alt="8월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">08</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 08 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_07.png" alt="7월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">07</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 07 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_06.png" alt="6월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">06</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 06 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_05.png" alt="5월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">05</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 05 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_04.png" alt="4월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">04</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 04 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_03.png" alt="3월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">03</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 03 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_02.png" alt="2월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">02</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 02 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                      <li class="report_list">
+                        <a href="#!" class="report_link">
+                          <div class="report_list_img_box">
+                            <img src="/site/basic/img/temp_01.png" alt="1월 대표 이미지" class="report_list_img">
+                            <div class="report_list_img_text_box">
+                              <p class="white_stitle">2024</p>
+                              <p class="white_ltitle">01</p>
+                            </div>
+                            <div class="report_list_img_dim"></div>
+                          </div>
+                          <div class="report_list_text_box">
+                            <div class="report_list_title_box">
+                              <p class="division_text">VOL. 153</p>
+                              <h5 class="basic_stitle">2024. 01 먹거리 동향</h5>
+                            </div>
+                            <div class="report_list_info_text_box">
+                              <p class="basic_title under_line">ISSUE</p>
+                              <ul class="report_list_info_text_ul">
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">재단 관련</p>
+                                  <p class="basic_gray_text">3개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">먹거리 정책</p>
+                                  <p class="basic_gray_text">1개</p>
+                                </li>
+                                <li class="report_list_info_text_list">
+                                  <p class="basic_gray_text">기타 외부 동향</p>
+                                  <p class="basic_gray_text">7개</p>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- button list -->
+                <div class="button_wrap">
+                  <ul class="button_box">
+                    <li class="button_list on">
+                      <a href="">
+                        <p class="button_text">등록</p>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+     </main>
+    <!-- E sub -->
+
+    <!-- S footer -->
+    <footer id="footer" class="step_t120">
+      <div class="footer_wrap">
+        <div class="inner">
+          <div class="footer_info_wrap">
+            <!-- footer 정보 -->
+            <div class="footer_info_box">
+              <div class="footer_contact_box">
+                <h4 class="white_title4">CONTACT</h4>
+                <ul class="footer_contact_ul">
+                  <li class="footer_contact_list">
+                    <img src="/site/basic/img/phone_icon.svg" alt="전화기 아이콘 이미지" class="footer_contact_icon_img mar_r5">
+                    <p class="white_basic_text">033·255·9950~3</p>
+                  </li>
+                  <li class="footer_contact_list">
+                    <img src="/site/basic/img/spot_icon.svg" alt="주소 아이콘 이미지" class="footer_contact_icon_img mar_r5">
+                    <p class="white_basic_text">강원특별자치도 춘천시 마장길 39, 사농동 133-1(24233)</p>
+                  </li>
+                </ul>
+              </div>
+              <ul class="footer_policy_ul">
+                <li class="footer_policy_list">
+                  <a href="" class="footer_policy_text">이용약관</a>
+                </li>
+                <li class="footer_policy_list">
+                  <a href="" class="footer_policy_text">개인정보처리방침</a>
+                </li>
+                <li class="footer_policy_list">
+                  <a href="" class="footer_policy_text">저작권/접근성보호정책</a>
+                </li>
+              </ul>
+            </div>
+            
+            <!-- footer 셀렉트 -->
+            <div class="footer_select_box">
+              <ul class="footer_select_ul">
+                <li class="footer_select_list">
+                  <div class="select_up_box related_box">
+                    <div class="select_up_btn related_btn">
+                      <p class="select_up_txt related_btn_txt">유관기관</p>
+                    </div>
+                    <div class="select_up_list_box related_list_box">
+                      <ul class="select_up_ul related_ul">
+                        <li class="select_up_list related_list">
+                          <a href="http://www.jeonjufood.org/" target="_blank">
+                            <span>전주푸드통합지원센터</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://www.hsfoodcenter.or.kr/gnu/" target="_blank">
+                            <span>화성푸드통합지원센터</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://singsing.sejong.go.kr/" target="_blank">
+                            <span>세종공공급식지원센터</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://www.chuncheon.go.kr" target="_blank">
+                            <span>춘천시청</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://www.chuncheon.go.kr/atc/index.chuncheon" target="_blank">
+                            <span>춘천시 농업기술센터</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="https://www.garak.co.kr/main/main.do" target="_blank">
+                            <span>농수산식품공사(가락시장)</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="https://www.epis.or.kr" target="_blank">
+                            <span>농림수산식품교육문화정보원</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://www.chuncheonmarket.or.kr/" target="_blank">
+                            <span>춘천 농산물도매시장</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+                <li class="footer_select_list">
+                  <div class="select_up_box related_box">
+                    <div class="select_up_btn related_btn">
+                      <p class="select_up_txt related_btn_txt">관련언론기관</p>
+                    </div>
+                    <div class="select_up_list_box related_list_box">
+                      <ul class="select_up_ul related_ul">
+                        <li class="select_up_list related_list">
+                          <a href="http://www.newsfarm.co.kr" target="_blank">
+                            <span>한국농업신문</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://www.nongupin.co.kr" target="_blank">
+                            <span>농업인신문</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://nongup.net" target="_blank">
+                            <span>농업정보신문</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://www.fsnews.co.kr" target="_blank">
+                            <span>대한급식신문</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://kado.net" target="_blank">
+                            <span>강원도민일보</span>
+                          </a>
+                        </li>
+                        <li class="select_up_list related_list">
+                          <a href="http://kwnews.co.kr" target="_blank">
+                            <span>강원일보</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+              <p class="copyright_text">COPYRIGHT (C) 춘천지역먹거리지원센터. <br>ALL RIGHTS RESERVED.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- E footer -->
+  </div>
+</body>
+
+
+
+
+
+</html>
