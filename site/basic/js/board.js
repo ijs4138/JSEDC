@@ -33,4 +33,14 @@ $(function() {
 
 
 
+// 이메일 도메인 선택 시 자동 입력
+$(document).ready(function () {
+  $('#emailSelect').on('change', function () {
+    const selectedDomain = $(this).val(); // 선택된 이메일 도메인 값
+    $('#emailDomain').val(selectedDomain); // 입력창에 도메인 값 설정
+    $(this).val(''); // 셀렉트박스를 다시 "선택" 상태로 초기화
+  });
+});
+
+
 

@@ -1006,8 +1006,6 @@
     font-size: 16px;
     font-weight: 500;
     word-break: keep-all;
-    font-family: 'Pretendard';
-    letter-spacing: 1px;
     transition: 0.3s ease;
 }
 
@@ -1289,8 +1287,7 @@
 }
 
 .file_upload_btn:hover {
-    background: #05230A;
-    border: 2px solid #05230A;
+    background: #E5F6E7;
 }
 
 .file_upload_btn_text {
@@ -1307,7 +1304,7 @@
 }
 
 .file_upload_btn:hover .file_upload_btn_text {
-    color: #fff;
+    /* color: #fff; */
 }
 
 .delete_file {
@@ -1322,7 +1319,7 @@
     width: 100%;
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .delete_file_check {
@@ -1341,13 +1338,18 @@
 }
 
 input[type="checkbox"]:checked+.delete_file_check {
-    background: #ff5050;
+    background: #F6503B;
 }
 
 .delete_file_text {
     font-size: 16px;
     font-weight: 500;
     color: #454C53;
+    transition: 0.3s ease;
+}
+
+input[type="checkbox"]:checked+.delete_file_check+.delete_file_text {
+    color: #F6503B;
 }
 
 
@@ -1396,6 +1398,7 @@ input[type="checkbox"]:checked+.delete_file_check {
     font-size: 16px;
     font-weight: 700;
     text-align: center;
+    padding: 0 16px;
 }
 
 .button_list.on .button_text {
@@ -1445,6 +1448,17 @@ input {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    position: relative;
+}
+
+.input_step {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 0;
+    border-top: 1px solid #E8EBED;
+    gap: 10px;
 }
 
 .input_box input {
@@ -1481,16 +1495,6 @@ input::placeholder {
     font-weight: 400;
     color: #9EA4AA;
     transition: 0.3s ease;
-}
-
-.input_step {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 24px 0;
-    border-top: 1px solid #E8EBED;
-    gap: 10px;
 }
 
 .input_select {
@@ -1567,6 +1571,15 @@ input::placeholder {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.input_day_icon::after {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    content: url(../img/cld_icon.svg);
+    display: block;
 }
 
 .division_text {
@@ -1811,6 +1824,8 @@ input::placeholder {
     .report_list_info_text_box {gap: 24px;}
     .report_list_text_box {gap: 24px;}
     .report_list_info_text_list {max-width: 140px; gap: 20px;}
+    .email_input_box{display: none;}
+    .email_domain_box{max-width: 100%;}
 }
 
 @media(max-width : 500px) {

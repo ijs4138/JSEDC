@@ -2,6 +2,44 @@
 
 
 
+// 연혁 연도 클릭 시 스크롤 이동
+$(function () {
+  $('.history_year_list').on('click', function () {
+    const index = $(this).index(); // 클릭한 리스트의 인덱스 가져오기
+    const targetOffset = $('.history_right_list').eq(index).offset().top - 120; // 타겟 위치 계산 (여유 공간 추가)
+
+    $('html, body').animate(
+      { scrollTop: targetOffset }, // 타겟 위치로 스크롤
+      500, // 스크롤 애니메이션 시간 (밀리초)
+      'swing' // 애니메이션 효과 (swing 또는 linear)
+    );
+  });
+
+  // 스크롤 시 연도 on 클래스 업데이트
+  function updateYearOnScroll() {
+    const sections = $('.history_right_list');
+    const yearLists = $('.history_year_list');
+    const scrollTop = $(window).scrollTop();
+
+    sections.each(function (index) {
+      const offsetTop = $(this).offset().top - 400;
+      const nextOffsetTop = sections.eq(index + 1).offset()?.top - 400 || Infinity;
+
+      if (scrollTop >= offsetTop && scrollTop < nextOffsetTop) {
+        yearLists.removeClass('on');
+        yearLists.eq(index).addClass('on');
+        return false;
+      }
+    });
+  }
+
+  $(window).on('scroll', updateYearOnScroll);
+  updateYearOnScroll();
+});
+
+
+
+
 $(document).ready(function () {
   // 1DEP 메뉴 클릭 시
   $(".mo_dep1_list").click(function () {
