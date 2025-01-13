@@ -1,6 +1,28 @@
 
 
 
+// 조직도 클릭시 화면 스크롤
+$(document).ready(function () {
+  $('.organization_top_dep_list, .team_organization_list, .department_info_top_box .all_view_box').on('click', function () {
+    // object_native_info_wrap의 위치 계산
+    var targetOffset = $('.department_info_view_box').offset().top;
+    var offsetValue = 200; // 기본값 150px
+
+    // 화면 넓이에 따른 스크롤 위치 조정
+    if (window.innerWidth <= 1000) {
+      offsetValue = 170; // 100px 뺀 위치
+    } else if (window.innerWidth <= 1600) {
+      offsetValue = 200; // 130px 뺀 위치
+    }
+
+    // 스크롤 애니메이션
+    $('html, body').animate({
+      scrollTop: targetOffset - offsetValue // 계산된 값만큼 스크롤
+    }, 500); // 500ms 동안 애니메이션
+  });
+});
+
+
 
 // 연혁 연도 클릭 시 스크롤 이동
 $(function () {
